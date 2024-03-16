@@ -1,0 +1,7 @@
+mypy==1.9.0
+mypy-extensions==1.0.0
+numpy==1.26.4
+pyarrow==15.0.0
+pygame==2.5.2
+pylance==0.10.4
+typing_extensions==4.10.0
