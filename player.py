@@ -1,4 +1,3 @@
-from pygame import Rect
 from gameObject import GameObject
 import pygame
 
@@ -8,9 +7,6 @@ SPEED: float = 3
 
 class Player(GameObject):
     color = (255, 255, 255)
-
-    def __init__(self, rect: Rect) -> None:
-        super().__init__(rect)
 
     def tick(self) -> None:
         keys = pygame.key.get_pressed()
