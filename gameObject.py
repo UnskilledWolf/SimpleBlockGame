@@ -1,13 +1,16 @@
-from pygame import Surface
+from pygame import Surface, Rect
+import pygame
 
 
 class GameObject:
-    x: float = 0
-    y: float = 0
+    rect: Rect
+    color: tuple[int, int, int] = (255, 255, 255)
 
-    def __init__(self, x: float, y: float) -> None:
-        self.x = x
-        self.y = y
+    def __init__(self, rect: Rect) -> None:
+        self.rect = rect
+
+    def tick(self) -> None:
+        pass
 
     def render(self, screen: Surface) -> None:
-        pass
+        pygame.draw.rect(screen, self.color, self.rect)
