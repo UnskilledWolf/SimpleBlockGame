@@ -7,7 +7,8 @@ def main():
     screen = pygame.display.set_mode((500, 400))
     pygame.display.set_caption("Game")
     clock = pygame.time.Clock()
-    game = GameState()
+    font = pygame.font.SysFont(pygame.font.get_default_font(), 48)
+    game = GameState(font)
 
     # Main loop
     running = True

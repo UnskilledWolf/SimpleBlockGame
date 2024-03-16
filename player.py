@@ -2,7 +2,7 @@ from gameObject import GameObject
 import pygame
 
 
-SPEED: float = 3
+SPEED: float = 8
 
 
 class Player(GameObject):
