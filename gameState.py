@@ -13,7 +13,7 @@ class GameState:
 
     def __init__(self) -> None:
         self.addObject(Player(Rect(250, 350, 30, 10), self))
-        self.addObject(Ball(Rect(250, 200, 5, 5), self))
+        self.addObject(Ball(Rect(250, 30, 5, 5), self))
         self.addObject(Block(Rect(240, 10, 20, 20), self))
 
     def events(self, event: Event) -> None:
